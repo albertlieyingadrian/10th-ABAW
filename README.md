@@ -28,13 +28,15 @@ Download the Aff-Wild2 dataset following the official ABAW challenge instruction
 
 After preprocessing, the dataset directory should be organized as follows:
 
+```pgsql
 dataset_root/
  ├── annotations/
  ├── cropped_images/
  ├── cropped_aligned/
  ├── compacted_48/
  ├── raw_videos/
- ├── wav/
+ └── wav/
+```
  
 
 Update the dataset path in main.py if necessary.
@@ -69,10 +71,12 @@ The results will be saved in the specified -save_path, and will include:
 
 Example output structure:
 
+```pgsql
 results/
  ├── logs.csv
  ├── checkpoint.pth
- ├── predictions/
+ └── predictions/
+```
 
  
 ## Evaluation
